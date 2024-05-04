@@ -13,7 +13,7 @@ const LoginPage = () => {
     try {
       // Make an HTTP POST request to your backend API endpoint for login
       const response = await axios.post(
-        "nasa-app-server-production.up.railway.app/api/users/login",
+        "https://nasa-app-server-production.up.railway.app/api/users/login",
         {
           username,
           password,
