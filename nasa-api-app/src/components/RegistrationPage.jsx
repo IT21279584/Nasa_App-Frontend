@@ -36,7 +36,7 @@ const RegistrationPage = () => {
 
     try {
       // Make an HTTP POST request to your backend API endpoint
-      await axios.post("nasa-app-server-production.up.railway.app/api/users/register", {
+      await axios.post("https://nasa-app-server-production.up.railway.app/api/users/register", {
         username,
         email,
         password,
