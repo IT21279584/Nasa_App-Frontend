@@ -38,8 +38,8 @@ const LoginPage = () => {
         text: "You have successfully logged in.",
       });
 
-     navigate("/api/apod")
-      // window.location.href = "/api/apod";
+     // navigate("/api/apod")
+      window.location.href = "/api/apod";
     } catch (error) {
       // Display error message if login fails
       Swal.fire({
