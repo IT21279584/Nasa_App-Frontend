@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
-import { Link,useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
-  const navigate = UseNavigate();
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -37,8 +37,8 @@ const LoginPage = () => {
         text: "You have successfully logged in.",
       });
 
-      navigate("/api/apod")
-      // window.location.href = "/api/apod";
+     
+      window.location.href = "/api/apod";
     } catch (error) {
       // Display error message if login fails
       Swal.fire({
